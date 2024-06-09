@@ -13,7 +13,7 @@ async function logout() {
         <header class="">
             <UContainer class="flex items-center gap-5 p-5">
                 <ULink to="/" class="text-center flex-grow text-2xl md:text-3xl leading-tight space-x-2">
-                    <UIcon name="mdi:ring" dynamic class="w-6 h-6 text-primary" /> <span>Daniel & Sarah</span>
+                    <UIcon name="mdi:ring" dynamic class="w-6 h-6 text-primary" /> <span>Daniel & Sara</span>
                 </ULink>
                 <div class="flex gap-5 items-center">
                     <DarkMode />
