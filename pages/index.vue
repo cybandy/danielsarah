@@ -3,7 +3,6 @@ useHead({
     title: 'Auguri Daniel & Kwadwo'
 })
 const user = useSupabaseUser()
-console.log(user.value);
 
 </script>
 
