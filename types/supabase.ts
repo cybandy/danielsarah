@@ -11,25 +11,25 @@ export type Database = {
     Tables: {
       daniel_sarah: {
         Row: {
-          amount: number
+          amount: number | null
           created_at: string
           created_by: string | null
           id: number
-          name: string
+          name: string | null
         }
         Insert: {
-          amount: number
+          amount?: number | null
           created_at?: string
           created_by?: string | null
           id?: number
-          name: string
+          name?: string | null
         }
         Update: {
-          amount?: number
+          amount?: number | null
           created_at?: string
           created_by?: string | null
           id?: number
-          name?: string
+          name?: string | null
         }
         Relationships: [
           {

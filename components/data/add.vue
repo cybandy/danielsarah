@@ -11,7 +11,6 @@ const toast = useToast()
 const validate = (state: any): FormError[] => {
     const errors = []
     if (!state.name) errors.push({ path: 'name', message: 'Required' })
-    if (!state.amount) errors.push({ path: 'amount', message: 'Required' })
     return errors
 }
 
@@ -38,7 +37,7 @@ async function onSubmit(event: FormSubmitEvent<any>) {
 
 <template>
     <UForm :validate="validate" :state="state" class="space-y-4" @submit="onSubmit">
-        <UFormGroup label="Name" name="name">
+        <UFormGroup label="Name" name="name" required>
             <UInput icon="i-heroicons-identification" v-model="state.name" placeholder="John Doe" />
         </UFormGroup>
 
