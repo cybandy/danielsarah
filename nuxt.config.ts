@@ -41,5 +41,10 @@ export default defineNuxtConfig({
     name: 'Daniel & Sara',
     description: 'Wedding',
     defaultLocale: 'en'
+  },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false
+    }
   }
 })
